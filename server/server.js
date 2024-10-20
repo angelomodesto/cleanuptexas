@@ -16,7 +16,6 @@ let db;
 	});
 })();
 
-
 app = express();
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(express.json());
@@ -66,21 +65,28 @@ app.post('/add_event', async(req,res) => {
 app.get('/login', async(req,res) => {
 	let email = req.body.email;
 	let password = req.body.password;
-	const result = password == db.run("SELECT Password FROM user WHERE Email = (?)",[email]);
+	const result = password == db.run("SELECT Password FROM user WHERE Email = (email) VALUES",[email]);
 	res.json(result);
 })
 
 //view event by location
 app.get('/add_event', async(req,res) => {
 	let email = req.body.location;
-	const result = db.run("SELECT * FROM event WHERE location = (?)",[location]);
+	const result = db.run("SELECT * FROM event WHERE location = (location) VALUES",[location]);
 	res.json(result);
 })
 
 //view event by date
 app.get('/add_event', async(req,res) => {
 	let email = req.body.date;
-	const result = db.run("SELECT * FROM event WHERE date = (?)",[date]);
+	const result = db.run("SELECT * FROM event WHERE date = (date) VALUES(?)",[date]);
+	res.json(result);
+})
+
+//change user to host
+app.post('/update_host', async(req,res) => {
+	let email = req.body.email;
+	const result = await db.run("UPDATE user SET Host = 1 WHERE Email = (email) VALUES(?)", [email]);
 	res.json(result);
 })
 
