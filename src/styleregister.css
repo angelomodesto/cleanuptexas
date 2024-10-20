@@ -19,6 +19,12 @@ body {
     border: 2px solid rgba(34, 139, 34, 0.4); /* Forest green border */
     backdrop-filter: blur(20px);
     color: #2e8b57; /* Sea green text */
+    
+    /* Flex-related adjustments */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content within the container */
+    align-items: center; /* Horizontally center content within the container */
 }
 
 h1 {
@@ -29,6 +35,7 @@ h1 {
 
 .form-group {
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 label {

@@ -1,0 +1,63 @@
+/* LandingPage.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the app takes the full height of the viewport */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e5f7e9;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(34, 139, 34, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 100, 0, .2);
+    color: #4bd587;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for header */
+}
+
+header img.logo-button {
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+main {
+  flex: 1; /* Allow main to take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically and horizontally */
+  color: white; /* Set text color to white or any other contrasting color */
+}
+
+.main-content {
+  text-align: center; /* Center-align text in the main content */
+  padding: 20px; /* Add some padding */
+}
+
+.button-container {
+  margin-top: 20px; /* Space above the buttons */
+}
+
+footer {
+  text-align: center; /* Center footer text */
+  padding: 10px 0; /* Padding for footer */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for footer */
+}
