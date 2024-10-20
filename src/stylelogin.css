@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e5f7e9; /* Light, fresh green background for nature-inspired feel */
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(34, 139, 34, 0.4); /* Forest green border */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 100, 0, .2); /* Slight greenish shadow */
+    color: #4bd587; /* Sea green for text */
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    color: #2e8b57; /* Sea green heading */
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(34, 139, 34, 0.4); /* Forest green border */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2e8b57; /* Sea green text */
+    padding: 0 20px;
+}
+
+.input-box input::placeholder{
+    color: #094109; /* Pale green placeholder */
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #2e8b57; /* Sea green icon */
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #228b22; /* Forest green checkboxes */
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #2e8b57; /* Sea green links */
+    text-decoration: none;
+}   
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #094109;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(34, 139, 34, 0.3); /* Subtle green shadow */
+    cursor: pointer;
+    font-size: 16px;
+    color: #2e8b57; /* Sea green text on button */
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #2e8b57; /* Sea green links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
