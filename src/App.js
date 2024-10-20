@@ -63,6 +63,7 @@ function App() {
       </main>
       <footer>
         <p>&copy; 2023 Clean up Texas. All rights reserved.</p>
+
       </footer>
     </div>
   );

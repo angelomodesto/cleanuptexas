@@ -1,0 +1,87 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e5f7e9; /* Light, fresh green background for nature-inspired feel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white for subtlety */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(34, 139, 34, 0.3); /* Subtle greenish shadow */
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid rgba(34, 139, 34, 0.4); /* Forest green border */
+    backdrop-filter: blur(20px);
+    color: #2e8b57; /* Sea green text */
+}
+
+h1 {
+    text-align: center;
+    color: #2e8b57; /* Sea green heading */
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4bd587; /* Soft green label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgba(34, 139, 34, 0.4); /* Forest green border */
+    border-radius: 20px; /* Increased border-radius for rounded corners */
+    font-size: 1rem;
+    background-color: transparent; /* Transparent input background */
+    color: #2e8b57; /* Sea green input text */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #094109; /* Dark green placeholder */
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #094109; /* Dark green button */
+    color: #4bd587; /* Lighter green text on button */
+    border: none;
+    border-radius: 20px; /* Increased border-radius for rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e8b57; /* Sea green hover effect */
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #4bd587; /* Soft green text */
+}
+
+a {
+    color: #2e8b57; /* Sea green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
